@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url("/download (2).jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.glass-container {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 20px;
+    width: 72%;
+    max-width: 900px;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 35px rgba(0,0,0,0.35);
+    color: white;
+}
+
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+}
+
+#recipes {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.card {
+    min-width: 260px;
+    max-width: 260px;
+    height: 320px;
+    overflow-y: auto;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.card ul {
+    padding-left: 15px;
+    font-size: 12px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.card p {
+    font-size: 12px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+card img {
+    width: 100%;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.glass-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#category {
+    width: 160px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+/* Remove blue background in options */
+#category option {
+    color: #000;
+}
+
+/* Hover effect */
+#category:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Align dropdown with input box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.yt-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+.no-video{
+  opacity:0.6;
+  cursor:default;
+}
+
+.novideo-text{
+  color:#ffaaaa;
+  font-size:13px;
+}

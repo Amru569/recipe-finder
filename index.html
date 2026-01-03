@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Glass Recipe Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass-container">
+    <h1>🍲 Recipe Finder</h1>
+    <p>Enter Recipe Name</p>
+
+    <select id="category" onchange="loadCategory()">
+  <option value="">All Dishes</option>
+</select>
+
+
+    <form class="search-box" onsubmit="event.preventDefault(); findRecipes();">
+        <input type="text" id="ingredients" placeholder="eg: chicken biryani, cake, dosa">
+        <button type="submit">Find Recipes</button>
+    </form>
+
+
+    <div id="recipes"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
